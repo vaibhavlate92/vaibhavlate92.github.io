@@ -1,0 +1,466 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    width: 100vw;
+}
+
+/* navbar section in header file */
+
+.navbar {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    padding: 0px 50px;
+}
+
+.nav_bar{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.nav_bar:hover{
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+@media (min-width:450px){
+    .nav_bar {
+    display: none;
+}
+}
+
+@media(max-width:800px){
+    .content-remove{
+        display: none;
+    }
+}
+
+.nav_logo {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media(max-width:450px){
+    .nav_content{
+        display: none;
+    }
+}
+
+.nav_content a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0px 20px;
+    padding: 5px 0px;
+    letter-spacing: 0.07rem;
+}
+
+.nav_content a:hover {
+    border-bottom: 3px solid orange;
+    color: orange;
+}
+
+/* hero section in main file */
+
+.hero_section {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 80px;
+}
+
+.home_about {
+    width: 450px;
+}
+
+.home_about p {
+    color: orange;
+    margin: 15px 0px;
+    font-weight: 500;
+}
+
+.home_about h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 40px;
+}
+
+.home_about h1 span {
+    color: orange;
+}
+
+.home_about h3 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+
+.home_about h4 {
+    color: black;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    margin: 10px 0px;
+}
+
+.button a {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+} 
+
+.button a:hover{
+    background-color: rgb(212, 140, 5);
+}
+
+.button button {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-size: 1rem;
+}
+
+.button button:hover {
+    background-color: rgba(0, 0, 0, 0.772);
+}
+
+.home_img img {
+    width: 450px;
+    border-bottom: 2px solid black;
+}
+
+@media(max-width:450px){
+    .home_img img{
+        width: 100%;
+    }
+    .home_about {
+        padding: 20px 0px 20px 20px;
+        width: 100%;
+    }
+}
+
+/* aboutMe in main file */
+.aboutMe {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aboutMe_section_1 {
+    padding-top: 100px;
+}
+
+.aboutMe_section_1 .aboutMe_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.aboutMe_section_1 .img img {
+    height: 200px;
+    border-radius: 100px;
+    border: 10px solid orange;
+    margin-right: 10px;
+}
+
+.aboutMe_info p{
+    margin: 25px 10px;
+}
+
+.aboutMe_skills p{
+    margin: 30px 0px 30px 20px;
+}
+
+.aboutMe_section_2{
+    width: 600px;
+}
+
+.aboutMe_section_2 h2{
+    margin: 20px 0px;
+    font-size: 35px;
+    font-weight: 900;
+    border-bottom: 5px solid orange;
+}
+
+.aboutMe_section_2 p {
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.aboutMe_section_2 ul {
+    margin: 20px;
+}
+
+.aboutMe_section_2 ul li {
+    margin: 35px 0px;
+}
+
+@media(max-width:450px){
+    .aboutMe_img {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .img img{
+        width: 100%;
+    }
+
+    .aboutMe_skills p{
+        padding-left: 60px;
+    }
+
+    .aboutMe_section_2 h2{
+        text-align: center;
+        border-bottom: 5px solid orange;
+    }
+
+    .aboutMe_section_2 {
+        padding: 20px;
+    }
+    .aboutMe_section_2 p{
+        text-align: justify;
+    }
+}
+
+/* education section in main file */
+.education {
+    width: 100vw;
+    text-align: center;
+}
+
+.education h1{
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin: 0% 10%;
+    padding: 10px 0px;
+    border-bottom: 5px solid orange;
+}
+
+.education_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+
+.education_section .card {
+    width: 500px;
+    height: 200px;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 30px 0px 40px 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.education_section .card h4{
+    font-size: 25px;
+    color: orange;
+    padding: 5px 0px;
+}
+
+.education_section .card h5 {
+    font-size: 25px;
+    padding: 5px 0px;
+}
+
+.education_section .card h6{
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+.education_section .card p{
+    font-size: 15px;
+    padding: 15px 0px;
+}
+
+.downloadCV {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadCV a{
+    background-color: orange;
+    color: black;
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.downloadCV a:hover {
+    background-color: rgb(207, 136, 5);
+    border: 1px dotted white;
+}
+
+/* project section in main file */
+
+.projects {
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.project_section h1{
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin: 0% 10%;
+    padding: 10px 0px;
+    border-bottom: 5px solid orange;
+}
+
+.project_section p {
+    margin: 30px 0px 30px ;
+    text-align: center;
+}
+
+.project_section_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project_card {
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.project_card img{
+    width: 400px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project_card h4 {
+    margin: 20px 10px;
+}
+
+.project_card p {
+    margin: 20px 10px;
+} 
+
+@media(max-width:450px){
+    .project_card img {
+        width: 100%;
+    }
+
+    .project_card {
+        margin: 10px 10px;
+    }
+}
+
+/* contact ME in footer in file */
+
+.footer {
+    width: 100vw;
+    margin-top: 50px;
+    padding: 100px 0px 50px 0px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.contactMe {
+    width: 100vw;
+}
+
+.contactMe h1{
+    text-align: center;
+    font-size: 40px;
+    width: 80%;
+    margin: 0% 10%;
+    padding: 10px 0px;
+    border-bottom: 5px solid orange;
+}
+
+.contactMe p {
+    margin: 30px 0px 50px ;
+    text-align: center;
+}
+
+.contactMe_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contact_card {
+    padding: 10px;
+}
+
+.contact_card i {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 50px;
+    background-color: rgba(175, 161, 161, 0.279);
+    color: orange;
+    font-size: 20px;
+}
+
+.contact_card i:hover {
+    background-color: rgba(175, 161, 161, 0.486);
+}
+
+.contact_card h4 {
+    padding: 10px 0px;
+}
+
+.contact_card a {
+    text-decoration: none;
+    color: orange;
+}
+
+.find_me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.find_me a {
+    background-color:rgba(175, 161, 161, 0.279);
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.find_me a i {
+    color: orange;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.find_me a i:hover{
+    background-color: rgba(175, 161, 161, 0.486);
+    border-radius: 50px;
+}
+.copyright p {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.174);
+}
